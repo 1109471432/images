@@ -1,9 +1,9 @@
-name: build
+name: image
 
 on:
   push:
     branches:
-      - master
+      - image
 
 jobs:
   golang:
