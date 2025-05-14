@@ -29,5 +29,5 @@ jobs:
         run: go build
 
       - name: image
-        run: ./images chrome -b 131.0.6778.139-1 -d 131.0.6778.108 -t selenoid/vnc:chrome_131.0
+        run: ./images chrome -b 136.0.7103.93 -d 136.0.7103.92 -t selenoid/vnc:chrome_131.0
 
