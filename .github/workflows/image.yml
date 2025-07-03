@@ -29,9 +29,9 @@ jobs:
         run: go build
 
       - name: image
-        run: ./images chrome -b 137.0.7151.68-1 -d 137.0.7151.68 -t selenoid/vnc:chrome_137.0
+        run: ./images chrome -b 138.0.7204.97-1 -d 138.0.7204.97 -t selenoid/vnc:chrome_138.0
       - name: image
-        run: docker save -o selenoid-vnc-chrome-137.tar  selenoid/vnc:chrome_137.0
+        run: docker save -o selenoid-vnc-chrome-138.tar  selenoid/vnc:chrome_138.0
 
       - name: upload
         uses: actions/upload-artifact@v4
