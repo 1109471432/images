@@ -29,7 +29,7 @@ jobs:
         run: go build
 
       - name: image
-        run: ./images chrome -b 138.0.7204.97-1 -d 138.0.7204.97 -t selenoid/vnc:chrome_138.0
+        run: ./images chrome -b 138.0.7204.92-1 -d 138.0.7204.92 -t selenoid/vnc:chrome_138.0
       - name: image
         run: docker save -o selenoid-vnc-chrome-138.tar  selenoid/vnc:chrome_138.0
 
