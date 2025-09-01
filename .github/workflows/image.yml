@@ -29,14 +29,14 @@ jobs:
         run: go build
 
       - name: image
-        run: ./images chrome -b 138.0.7204.92-1 -d 138.0.7204.92 -t selenoid/vnc:chrome_138.0
+        run: ./images chrome -b 139.0.7258.154-1 -d 139.0.7258.154 -t selenoid/vnc:chrome_139.0
       - name: image
-        run: docker save -o selenoid-vnc-chrome-138.tar  selenoid/vnc:chrome_138.0
+        run: docker save -o selenoid-vnc-chrome-139.tar  selenoid/vnc:chrome_139.0
 
       - name: upload
         uses: actions/upload-artifact@v4
         with:
 #          name: docker-images-tar
-          path: selenoid-vnc-chrome-138.tar
+          path: selenoid-vnc-chrome-139.tar
           retention-days: 1  # 将保留天数设置为 1 天 最多可设置90天
 
